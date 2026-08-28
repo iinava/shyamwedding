@@ -24,7 +24,7 @@ const description =
   `${wedding.weekday}, ${wedding.dateLong} at ${wedding.venueCity}. We would love to have you with us.`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vinaya-aravind.wedding"),
+  metadataBase: new URL("https://vinaya-aswanth.wedding"),
   title,
   description,
   applicationName: "Wedding Invitation",

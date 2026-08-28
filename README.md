@@ -1,4 +1,4 @@
-# Vinaya & Aravind — Wedding Invitation
+# Vinaya & Aswanth — Wedding Invitation
 
 A mobile-first digital wedding invitation built from the printed card: ivory paper,
 deep indigo type, watercolour marigold and coral blooms, soft gold light.

@@ -5,7 +5,7 @@ import { FloralCorner, Ganesha } from "./Florals";
 import { PetalBurst, PetalDrift } from "./Petals";
 import { wedding } from "../lib/wedding";
 
-const MUSIC_KEY = "vinaya-aravind:music";
+const MUSIC_KEY = "vinaya-aswanth:music";
 
 /**
  * Owns the two things that have to live above every section: the sealed

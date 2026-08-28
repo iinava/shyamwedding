@@ -6,8 +6,8 @@
 
 export const wedding = {
   bride: "Vinaya",
-  groom: "Aravind",
-  groomFull: "Aravind K.V.",
+  groom: "Aswanth",
+  groomFull: "Aswanth K.P.",
   brideFull: "Vinaya",
 
   // Kept as separate lines so the couple section can breathe.
@@ -38,7 +38,7 @@ export const wedding = {
   ceremonyEndISO: "2026-09-05T12:45:00+05:30",
 
   signOff: "With love and prayers,",
-  families: "The families of Vinaya & Aravind",
+  families: "The families of Vinaya & Aswanth",
 
   /** Background music, played once the invitation is opened. */
   musicSrc: "/audio/bgsong.mp3",
@@ -70,13 +70,13 @@ export const calendarHref =
  * instead of stock photographs.
  */
 export const couplePhotos: { src: string; alt: string }[] = [
-  { src: "/couple/together.jpg", alt: "Vinaya and Aravind in the garden" },
-  { src: "/couple/embrace.jpg", alt: "Vinaya and Aravind at the tharavadu" },
+  { src: "/couple/together.jpg", alt: "Vinaya and Aswanth in the garden" },
+  { src: "/couple/embrace.jpg", alt: "Vinaya and Aswanth at the tharavadu" },
   { src: "/couple/hands.jpg", alt: "Henna-covered hands and wedding rings" },
 ];
 
 export const galleryPhotos: { src: string; alt: string }[] = [
-  { src: "/couple/together.jpg", alt: "Vinaya and Aravind in the garden" },
+  { src: "/couple/together.jpg", alt: "Vinaya and Aswanth in the garden" },
   { src: "/couple/hands.jpg", alt: "Henna-covered hands and wedding rings" },
-  { src: "/couple/embrace.jpg", alt: "Vinaya and Aravind at the tharavadu" },
+  { src: "/couple/embrace.jpg", alt: "Vinaya and Aswanth at the tharavadu" },
 ];
