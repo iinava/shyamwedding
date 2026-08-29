@@ -71,11 +71,11 @@ function Hero() {
           <Reveal delay={200}>
             <p className="eyebrow">Together with their families</p>
             <h1 className="mt-4 font-display text-[clamp(2.6rem,15vw,5.2rem)] font-light leading-[1.02]">
-              <span className="gold-shine block">{wedding.bride}</span>
+              <span className="gold-shine block">{wedding.groom}</span>
               <span className="my-0.5 block font-display text-[0.34em] italic text-[color:var(--coral)]">
                 and
               </span>
-              <span className="gold-shine block">{wedding.groom}</span>
+              <span className="gold-shine block">{wedding.bride}</span>
             </h1>
           </Reveal>
 
@@ -103,7 +103,7 @@ function Hero() {
 
 /* ── A gold ribbon to carry the eye between chapters ───── */
 function Ribbon() {
-  const line = `${wedding.bride} & ${wedding.groom}`;
+  const line = `${wedding.groom} & ${wedding.bride}`;
   return (
     <div className="marquee bleed" aria-hidden="true">
       <div className="marquee-track">
@@ -134,9 +134,9 @@ function Couple() {
           <Reveal className="lg:text-left">
             <p className="eyebrow">The couple</p>
             <h2 className="section-title mt-4">
-              <span className="gold-shine">{wedding.bride}</span>
-              <span className="mx-3 font-display italic text-[color:var(--coral)]">&amp;</span>
               <span className="gold-shine">{wedding.groom}</span>
+              <span className="mx-3 font-display italic text-[color:var(--coral)]">&amp;</span>
+              <span className="gold-shine">{wedding.bride}</span>
             </h2>
             <GoldDivider className="mt-6 lg:justify-start" />
             <p className="caption-script mt-8">Two families, one prayer</p>
@@ -209,8 +209,8 @@ function InvitationMessage() {
             <p>
               With the blessings of the Almighty and of our elders, and with hearts
               full of gratitude, we invite you to the wedding of our children,{" "}
-              <span className="text-[color:var(--ink)]">{wedding.bride}</span> and{" "}
-              <span className="text-[color:var(--ink)]">{wedding.groom}</span>.
+              <span className="text-[color:var(--ink)]">{wedding.groom}</span> and{" "}
+              <span className="text-[color:var(--ink)]">{wedding.bride}</span>.
             </p>
             <p>
               On the morning of {wedding.weekday}, {wedding.dateLong}, at the
@@ -405,7 +405,7 @@ function ThankYou() {
 
       <div className="section-inner">
         <Reveal>
-          <Monogram initials={`${wedding.bride[0]} & ${wedding.groom[0]}`} />
+          <Monogram initials={`${wedding.groom[0]} & ${wedding.bride[0]}`} />
           <Ganesha className="float-slow mx-auto mt-5 h-16 w-16 opacity-80" />
           <h2 className="section-title mt-8">
             <span className="gold-shine">Thank you</span>
@@ -416,9 +416,9 @@ function ThankYou() {
           </p>
           <GoldDivider className="mt-10" />
           <p className="mt-8 font-display text-[clamp(1.9rem,10vw,3.2rem)] font-light">
-            <span className="gold-shine">{wedding.bride}</span>
-            <span className="mx-3 italic text-[color:var(--coral)]">&amp;</span>
             <span className="gold-shine">{wedding.groom}</span>
+            <span className="mx-3 italic text-[color:var(--coral)]">&amp;</span>
+            <span className="gold-shine">{wedding.bride}</span>
           </p>
           <p className="mt-4 text-[0.64rem] uppercase tracking-[0.38em] text-[color:var(--ink-mute)]">
             {wedding.dateLong}

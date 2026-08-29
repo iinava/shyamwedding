@@ -123,11 +123,11 @@ export default function InviteShell({ children }: { children: ReactNode }) {
             <span className="eyebrow mt-3 block text-[0.58rem]">Shree Ganeshaya Namah</span>
 
             <span className="mt-9 block font-display text-[clamp(2.6rem,15vw,4.6rem)] font-light leading-[1.02] tracking-[0.01em]">
-              <span className="gold-shine block">{wedding.bride}</span>
+              <span className="gold-shine block">{wedding.groom}</span>
               <span className="my-1 block font-display text-[0.42em] italic text-[color:var(--coral)]">
                 and
               </span>
-              <span className="gold-shine block">{wedding.groom}</span>
+              <span className="gold-shine block">{wedding.bride}</span>
             </span>
 
             <span className="gold-rule mt-8 block h-px w-40" />

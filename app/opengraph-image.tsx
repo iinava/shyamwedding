@@ -3,7 +3,7 @@ import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { wedding } from "./lib/wedding";
 
-export const alt = `${wedding.bride} & ${wedding.groom} — Wedding Invitation, ${wedding.dateLong}`;
+export const alt = `${wedding.groom} & ${wedding.bride} — Wedding Invitation, ${wedding.dateLong}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -129,13 +129,13 @@ export default async function OpengraphImage() {
 
             <div style={{ display: "flex", flexDirection: "column", marginTop: 22, color: "#1b2a5b" }}>
               <span style={{ fontFamily: display, fontSize: 86, lineHeight: 1.05 }}>
-                {wedding.bride}
+                {wedding.groom}
               </span>
               <span style={{ fontFamily: display, fontSize: 40, color: "#e2703a", fontStyle: "italic" }}>
                 and
               </span>
               <span style={{ fontFamily: display, fontSize: 86, lineHeight: 1.05 }}>
-                {wedding.groom}
+                {wedding.bride}
               </span>
             </div>
 

@@ -18,9 +18,9 @@ const body = Jost({
   display: "swap",
 });
 
-const title = `${wedding.bride} & ${wedding.groom} · ${wedding.dateLong}`;
+const title = `${wedding.groom} & ${wedding.bride} · ${wedding.dateLong}`;
 const description =
-  `With the blessings of our elders, ${wedding.bride} and ${wedding.groom} are getting married on ` +
+  `With the blessings of our elders, ${wedding.groom} and ${wedding.bride} are getting married on ` +
   `${wedding.weekday}, ${wedding.dateLong} at ${wedding.venueCity}. We would love to have you with us.`;
 
 export const metadata: Metadata = {
@@ -28,10 +28,10 @@ export const metadata: Metadata = {
   title,
   description,
   applicationName: "Wedding Invitation",
-  keywords: ["wedding", "invitation", wedding.bride, wedding.groom, wedding.venueCity],
+  keywords: ["wedding", "invitation", wedding.groom, wedding.bride, wedding.venueCity],
   openGraph: {
     type: "website",
-    siteName: `${wedding.bride} & ${wedding.groom}`,
+    siteName: `${wedding.groom} & ${wedding.bride}`,
     title,
     description,
     locale: "en_IN",

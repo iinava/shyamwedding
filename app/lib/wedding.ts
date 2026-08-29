@@ -38,7 +38,7 @@ export const wedding = {
   ceremonyEndISO: "2026-09-05T12:45:00+05:30",
 
   signOff: "With love and prayers,",
-  families: "The families of Vinaya & Aswanth",
+  families: "The families of Aswanth & Vinaya",
 
   /** Background music, played once the invitation is opened. */
   musicSrc: "/audio/bgsong.mp3",
@@ -56,11 +56,11 @@ const stamp = (iso: string) =>
 
 export const calendarHref =
   "https://calendar.google.com/calendar/render?action=TEMPLATE" +
-  `&text=${encodeURIComponent(`${wedding.bride} & ${wedding.groom} — Wedding`)}` +
+  `&text=${encodeURIComponent(`${wedding.groom} & ${wedding.bride} — Wedding`)}` +
   `&dates=${stamp(wedding.ceremonyISO)}/${stamp(wedding.ceremonyEndISO)}` +
   `&location=${encodeURIComponent(`${wedding.venueCity}, ${wedding.venueRegion}`)}` +
   `&details=${encodeURIComponent(
-    `The wedding of ${wedding.bride} and ${wedding.groom} at ${wedding.venueName}, ${wedding.venueCity}.`
+    `The wedding of ${wedding.groom} and ${wedding.bride} at ${wedding.venueName}, ${wedding.venueCity}.`
   )}`;
 
 /**
