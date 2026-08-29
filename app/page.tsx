@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Countdown from "./components/Countdown";
 import { FloralCorner, Ganesha, GoldDivider, Monogram, WeddingRings } from "./components/Florals";
+import Gallery from "./components/Gallery";
 import InviteShell from "./components/InviteShell";
 import PhotoFeature from "./components/PhotoFeature";
 import Reveal from "./components/Reveal";
 import ScratchDate from "./components/ScratchDate";
-import { calendarHref, couplePhotos, mapsHref, wedding } from "./lib/wedding";
+import { calendarHref, couplePhotos, galleryPhotos, mapsHref, wedding } from "./lib/wedding";
 
 const [together, embrace, hands] = couplePhotos;
 
@@ -20,6 +21,7 @@ export default function Page() {
         <InvitationMessage />
         <DateReveal />
         <CountdownSection />
+        <Moments />
         <Details />
         <Venue />
         <ThankYou />
@@ -291,6 +293,30 @@ function CountdownSection() {
             </svg>
             Save the date
           </a>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+/* ── 6. A few stolen moments ───────────────────────────── */
+function Moments() {
+  return (
+    <section className="section">
+      <FloralCorner corner="tl" className="sway pointer-events-none absolute -left-16 -top-8 h-48 w-48" opacity={0.6} />
+      <FloralCorner corner="br" className="sway sway-alt pointer-events-none absolute -bottom-8 -right-16 h-48 w-48" opacity={0.6} />
+
+      <div className="section-inner wide">
+        <Reveal>
+          <p className="eyebrow">A few stolen moments</p>
+          <h2 className="section-title mt-5">
+            <span className="gold-shine">Before the big day</span>
+          </h2>
+          <GoldDivider className="mt-6" />
+        </Reveal>
+
+        <Reveal delay={200} slow className="mt-10">
+          <Gallery photos={galleryPhotos} />
         </Reveal>
       </div>
     </section>

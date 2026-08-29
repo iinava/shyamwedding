@@ -31,7 +31,7 @@ export const wedding = {
    * With it null the button falls back to a plain Maps *search* for the
    * place name above.
    */
-  mapsUrl: null as string | null,
+  mapsUrl: "https://maps.app.goo.gl/HeBzCrAvrLP4PdtWA" as string | null,
 
   /** ISO local time of the muhurtham, used by the countdown. */
   ceremonyISO: "2026-09-05T12:00:00+05:30",
@@ -76,7 +76,8 @@ export const couplePhotos: { src: string; alt: string }[] = [
 ];
 
 export const galleryPhotos: { src: string; alt: string }[] = [
-  { src: "/couple/together.jpg", alt: "Vinaya and Aswanth in the garden" },
-  { src: "/couple/hands.jpg", alt: "Henna-covered hands and wedding rings" },
-  { src: "/couple/embrace.jpg", alt: "Vinaya and Aswanth at the tharavadu" },
+  { src: "/couple/photo_2026-08-29_13-50-23.jpg", alt: "Aswanth and Vinaya hand in hand by a fallen log, misty hills behind" },
+  { src: "/couple/photo_2026-08-29_13-50-30.jpg", alt: "Vinaya and Aswanth sharing a smile on a mist-covered hillside" },
+  { src: "/couple/photo_2026-08-29_13-50-32.jpg", alt: "Aswanth twirls Vinaya beside the lake, a veena resting on the grass" },
+  { src: "/couple/photo_2026-08-29_13-50-35.jpg", alt: "Aswanth and Vinaya walking together by the lake" },
 ];
