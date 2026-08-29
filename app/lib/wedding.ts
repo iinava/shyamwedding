@@ -22,7 +22,7 @@ export const wedding = {
 
   venueName: "The Bride's Residence",
   venueSubtitle: "Vadhugriham",
-  venueCity: "8/4, Chelannur",
+  venueCity: "Vadakara Purameri",
   venueRegion: "Kerala, India",
 
   /**
